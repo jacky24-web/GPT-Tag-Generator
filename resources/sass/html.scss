@@ -1,0 +1,29 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* use viewport-relative units to cover page fully */
+body {
+  height: 100vh;
+}
+
+.main-wrapper{
+  
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    .main-content{
+        padding-top: 120px;
+        padding-bottom: 100px;
+      
+    }
+}
+
+.btn-outline-dark{
+    border-color: #2e303a;
+    color: #2e303a;
+    &:hover{
+       background-color: #2e303a; 
+    }
+}

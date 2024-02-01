@@ -1,0 +1,28 @@
+.products{
+
+    .card{
+        box-shadow: 0 0 40px 0 rgba(0,0,0,.15);
+    }
+    table{
+        thead{
+            tr{
+                th{
+                    background-color: #7b899e;
+                    color: #fff;
+                    font-size: 18px;
+                    padding: 0.8em 2em;
+                }
+            }
+        }
+        tbody{
+            tr{
+                td{
+                    font-size: 17px;
+                    color: gray;
+                    line-height: 1.4;
+                    padding: 0.8em 2em;
+                }
+            }
+        }
+    }
+}
