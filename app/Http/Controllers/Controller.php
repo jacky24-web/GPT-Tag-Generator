@@ -9,4 +9,20 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+
+    public function createEnrichement()
+    {
+        return view('create-enrichement');
+    }
+
+    public function editEnrichement()
+    {
+        return view('edit-enrichement');
+    }
+
+    public function indexEnrichement()
+    {
+        return view('home');
+
+    }
 }

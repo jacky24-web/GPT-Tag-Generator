@@ -1,0 +1,23 @@
+
+.table{
+    thead{
+        tr{
+            th{
+                background-color: $light-blue;
+                color: #fff;
+                font-size: 1.1rem;
+                    padding: 0.8em 1.5em;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                font-size: 17px;
+                color: gray;
+                line-height: 1.4;
+                    padding: 0.8em 1.5em;
+            }
+        }
+    }
+}

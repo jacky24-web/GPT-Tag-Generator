@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[ProductController::class,'index']);
+Route::view('/','home')->name('home');
+// Route::get('/',[ProductController::class,'index']);
 
 
 Route::get('products',[ProductController::class,'index']);
@@ -24,5 +26,11 @@ Route::post('store-single-product-tags',[ProductController::class,'storeProductT
 Route::post('store-product-tags',[ProductController::class,'storeTags'])->name('store.tags');
 
 Route::get('product/{product_id}/tags',[ProductController::class,'getProductTags']);
+
+Route::get('enrichements',[Controller::class,'indexEnrichement'])->name('enrichement.index');
+Route::get('create-enrichement',[Controller::class,'createEnrichement'])->name('enrichement.create');
+Route::get('edit-enrichement',[Controller::class,'editEnrichement'])->name('enrichement.edit');
+Route::get('semulates',[ProductController::class,'index'])->name('semulate.index');
+
 
 

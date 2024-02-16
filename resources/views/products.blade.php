@@ -4,7 +4,7 @@
 
 <div class="container col-9 products">
     <div class="d-flex justify-content-end mb-4">
-        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#generateTags">Generate Tags</button>
+        <button type="button" class="btn btn-outline-dark-blue" data-bs-toggle="modal" data-bs-target="#generateTags">Generate Tags</button>
     </div>
     {{-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#generateTags">
         Launch demo modal
@@ -31,9 +31,9 @@
                             <td>{{ $product->category }}</td>
                             <td>{{ $product->sales }}</td>
                             <td>
-                                <button type="button" class="btn btn-outline-primary jsGetProductTagsBtn" data-id="{{$product->id}}">Show Tags</button>
+                                <button type="button" class="btn btn-outline-dark-blue jsGetProductTagsBtn" data-id="{{$product->id}}">Show Tags</button>
 
-                                <button type="button" class="btn btn-primary jsGenrateTagsBtn" data-id="{{$product->id}}" data-name="{{$product->name}}">
+                                <button type="button" class="btn btn-dark-blue jsGenrateTagsBtn" data-id="{{$product->id}}" data-name="{{$product->name}}">
                                     Get Tags
                                 </button>
                             </td>

@@ -3,18 +3,42 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+    flex-direction: column;
+    height: 100%;
+    // font-family: "Roboto", sans-serif;
+    font-family: "Noto Sans",sans-serif;
 }
+
 
 /* use viewport-relative units to cover page fully */
 body {
   height: 100vh;
 }
 
+h1,h2,h3,h4{
+  color: $dark-blue;
+}
+
+form{
+  label{
+    color: $dark-blue;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .form-control{
+    border: 1px solid #959ca0;
+    color: #606b71;
+    padding: 0.45rem 0.75rem;
+  }
+}
 .main-wrapper{
-  
+  flex: 1;
     background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
     .main-content{
-        padding-top: 120px;
+        padding-top: 170px;
         padding-bottom: 100px;
       
     }

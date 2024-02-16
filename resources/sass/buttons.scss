@@ -1,0 +1,42 @@
+.btn{
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    &.btn-light-blue{
+        color: $white;
+        border-color: $light-blue;
+        background-color: $light-blue;
+    }
+    &.btn-dark-blue{
+        color: $white;
+        border-color: $dark-blue;
+        background-color: $dark-blue;
+    }
+    &.btn-outline{
+        &-dark-blue{
+            border-color: $dark-blue;
+            color: $dark-blue;
+            &:hover{
+                color: $white;
+                background-color: $dark-blue;
+            }
+        }
+    }
+
+    &-action{
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        width: 36px;
+        height: 33px;
+    i{
+        font-size: 0.8rem;
+        // margin-left: 0.1rem;
+    }
+
+    &:hover{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    }
+}
